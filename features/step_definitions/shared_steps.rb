@@ -1,5 +1,5 @@
 Given /^I have a rails 2 app$/ do
-  system "rm -rf tmp; mkdir -p tmp; cd tmp; rails -v; rails app"
+  system "rm -rf tmp; mkdir -p tmp; cd tmp; rails app &> /dev/null"
 end
 
 Given /^I have acts_as_rails3_generator and example generators installed$/ do
